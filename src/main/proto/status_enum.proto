@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package example.Enumeration;
+
+message StatusEnumMessage{
+    int32 id = 1;
+    StatusList status_list = 2;
+}
+enum StatusList{
+    NOT_ACTIVE = 0;
+    ACTIVE = 1;
+    ENABLE = 2;
+    DISABLE = 3;
+    SUSPEND = 4;
+}

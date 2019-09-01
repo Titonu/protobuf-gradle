@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package example.customer;
+
+message CustomerMessage{
+    int32 id = 1;
+    string first_name = 2;
+    string last_name = 3;
+    bool is_enable = 4;
+    repeated int32 customer_list = 5;
+}
